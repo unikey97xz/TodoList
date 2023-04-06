@@ -61,9 +61,9 @@ export default App = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
               }}>
-              <Modal
+              {/* <Modal
                 transparent={true}
-                visible={modalVisible}
+                visible={false}
                 onRequestClose={() => {
                   Alert.alert('Modal has been closed.');
                   setModalVisible(!modalVisible);
@@ -116,7 +116,7 @@ export default App = () => {
                     Ty le
                   </Text>
                 </View>
-              </Modal>
+              </Modal> */}
               <TouchableOpacity
                 style={{
                   position: 'relative',
