@@ -32,7 +32,12 @@ export default App = () => {
 
   const filteredData = id => {
     alert(id);
+
     let arr = data.filter(item => item.id !== id);
+    // let arr = data.filter(function (item) {
+    //   return item.id !== id;
+    // });
+
     setData(arr);
     console.log(arr);
   };
