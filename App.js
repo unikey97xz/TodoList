@@ -8,6 +8,7 @@ import {
   FlatList,
   Alert,
   Modal,
+  Keyboard,
 } from 'react-native';
 import {Button, Menu, Divider, Provider} from 'react-native-paper';
 import StudentList from './src/components/Data/StudentList.json';
@@ -25,7 +26,8 @@ export default App = () => {
     data.push({id: (StudentList.length + 1).toString(), name});
     console.log(StudentList);
     setname('');
-    setModalVisible(!modalVisible);
+    // dong ban phim lai
+    Keyboard.dismiss();
   };
 
   const filteredData = id => {
